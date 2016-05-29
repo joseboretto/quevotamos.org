@@ -6,6 +6,30 @@ Build: 1.0
 http://www.andreagalanti.it
 */
 
+/*TABLA PROPIA*/
+/* 
+Generic Styling, for Desktops/Laptops 
+*/  
+
+table, thead, tbody, td, tr, th {
+      
+    border-collapse: collapse;
+    padding: 2%;
+/*    border: 1px solid black;*/
+}
+thead tr{
+    color: white; 
+   background-color: #34495e;
+}
+
+tbody tr td{
+   background-color: #ecf0f1;
+   
+}
+
+
+/* FIN TABLA PROPIA*/
+
 /*General */
 
 body, html {
@@ -86,11 +110,13 @@ margin: auto;
 #owl-demo .item{
   margin: 3px;
 }
+/*
 #owl-demo .item img{
   display: block;
   width: 100%;
   height: auto;
 }
+*/
 
 #owl-demo-1 .item{
   margin: 3px;

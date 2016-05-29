@@ -227,7 +227,8 @@ if (typeof Object.create !== "function") {
             width = $(base.options.responsiveBaseWidth).width();
 
             if (width > (base.options.itemsDesktop[0] || base.orignalItems)) {
-                base.options.items = base.orignalItems;
+                //base.options.items = base.orignalItems;
+                base.options.items = base.options.itemsMobile[1];
             }
             if (base.options.itemsCustom !== false) {
                 //Reorder array by screen size
@@ -235,26 +236,31 @@ if (typeof Object.create !== "function") {
 
                 for (i = 0; i < base.options.itemsCustom.length; i += 1) {
                     if (base.options.itemsCustom[i][0] <= width) {
-                        base.options.items = base.options.itemsCustom[i][1];
+                        //base.options.items = base.options.itemsCustom[i][1];
+                        base.options.items = base.options.itemsMobile[1];
                     }
                 }
 
             } else {
 
                 if (width <= base.options.itemsDesktop[0] && base.options.itemsDesktop !== false) {
-                    base.options.items = base.options.itemsDesktop[1];
+                    //base.options.items = base.options.itemsDesktop[1];
+                    base.options.items = base.options.itemsMobile[1];
                 }
 
                 if (width <= base.options.itemsDesktopSmall[0] && base.options.itemsDesktopSmall !== false) {
-                    base.options.items = base.options.itemsDesktopSmall[1];
+                    //base.options.items = base.options.itemsDesktopSmall[1];
+                    base.options.items = base.options.itemsMobile[1];
                 }
 
                 if (width <= base.options.itemsTablet[0] && base.options.itemsTablet !== false) {
-                    base.options.items = base.options.itemsTablet[1];
+                    //base.options.items = base.options.itemsTablet[1];
+                    base.options.items = base.options.itemsMobile[1];
                 }
 
                 if (width <= base.options.itemsTabletSmall[0] && base.options.itemsTabletSmall !== false) {
-                    base.options.items = base.options.itemsTabletSmall[1];
+                    //base.options.items = base.options.itemsTabletSmall[1];
+                    base.options.items = base.options.itemsMobile[1];
                 }
 
                 if (width <= base.options.itemsMobile[0] && base.options.itemsMobile !== false) {

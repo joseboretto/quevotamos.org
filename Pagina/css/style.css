@@ -4733,6 +4733,14 @@ footer p {
 		.col-sm-5 {margin-top:120px}
 		.section-heading{text-align:center}
 		.lead{text-align:center}
+        .item .lead {
+          margin-bottom: 30px;
+          margin-top: 20px;
+          font-size: 20px;
+          line-height: 1.2;
+          font-weight: 300;
+          text-align:left;
+        }
 		.box-icon{margin: 0 auto;}
 		.social{text-align:center}
 		.footer-banner{display:none}

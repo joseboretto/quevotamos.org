@@ -53,6 +53,8 @@ body, html {
 	padding: 90px 0;
 }
 
+
+
 .descp{
 	margin: 0;
 	padding: 0;
@@ -186,7 +188,7 @@ width: 50px;
 	border-color: rgba(52, 73, 94, 0);
 }
 
-.tworow{margin-top: 90px;}
+.tworow{margin-top: 50px;}
 
 .social {
 	font-size: 30px;
@@ -323,9 +325,16 @@ color: #ECEBEB;
 }
 
 .content-section-b {
+	border-top: 15px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 90px 0;
+	background-color: #FFFFFF;
+}
+.content-section-b2 {
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
-	padding: 90px 0; 
+	padding: 15px 0;
+	background-color: #E7E7E7;
 }
 
 .section-heading {
@@ -1099,8 +1108,15 @@ color: #ECEBEB;
 		}
 		
 		h1, .h1 {
-			font-size: 50px;
+			font-size: 30px;
 		}
+        /* Nuevo jose*/
+        .h1_home{
+            font-size: 30px;
+        }
+        .container h2 {
+		font-size: 26px;
+	    }
 		
 		h3, .h3 {
 			font-size: 20px;

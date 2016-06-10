@@ -30,6 +30,7 @@ if (typeof Object.create !== "function") {
 
             base.userOptions = options;
             base.loadContent();
+
         },
 
         loadContent : function () {
@@ -74,6 +75,7 @@ if (typeof Object.create !== "function") {
             base.wrapperWidth = 0;
             base.checkVisible = null;
             base.setVars();
+
         },
 
         setVars : function () {
@@ -1454,6 +1456,14 @@ if (typeof Object.create !== "function") {
             $.data(this, "owlCarousel", carousel);
         });
     };
+      //Sort random function
+	  function random(owlSelector){
+	    owlSelector.children().sort(function(){
+	        return Math.round(Math.random()) - 0.5;
+	    }).each(function(){
+	      $(this).appendTo(owlSelector);
+	    });
+	  }
 
     $.fn.owlCarousel.options = {
 
@@ -1507,7 +1517,7 @@ if (typeof Object.create !== "function") {
 
         beforeUpdate : false,
         afterUpdate : false,
-        beforeInit : false,
+        beforeInit : true,
         afterInit : false,
         beforeMove : false,
         afterMove : false,

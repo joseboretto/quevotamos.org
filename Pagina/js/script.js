@@ -36,12 +36,23 @@ $(document).ready(function() {
 
 
 		// OwlCarousel N1
-		$("#owl-demo").owlCarousel({
-			autoPlay: 3000,
-			items : 3,
-			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3]
+	$("#owl-demo").owlCarousel({
+		autoPlay: 3000,
+		items: 3,
+		itemsDesktop: [1199, 3],
+		itemsDesktopSmall: [979, 3],
+		beforeInit: function(elem) {
+			random(elem);
+		}
+	});
+
+	function random(owlSelector) {
+		owlSelector.children().sort(function() {
+			return Math.round(Math.random()) - 0.5;
+		}).each(function() {
+			$(this).appendTo(owlSelector);
 		});
+	}
 
 		// OwlCarousel N2
 		$("#owl-demo-1").owlCarousel({

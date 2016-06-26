@@ -37,10 +37,11 @@ $(document).ready(function() {
 
 		// OwlCarousel N1
 	$("#owl-demo").owlCarousel({
-		autoPlay: 3000,
-		items: 3,
-		itemsDesktop: [1199, 3],
-		itemsDesktopSmall: [979, 3],
+		autoPlay : false,
+		//autoPlay: 3000,
+		// items: 3,
+		// itemsDesktop: [1199, 3],
+		// itemsDesktopSmall: [979, 3],
 		beforeInit: function(elem) {
 			random(elem);
 		}
@@ -55,12 +56,12 @@ $(document).ready(function() {
 	}
 
 		// OwlCarousel N2
-		$("#owl-demo-1").owlCarousel({
-			  navigation : false, // Show next and prev buttons
-			  slideSpeed : 300,
-			  paginationSpeed : 400,
-			  singleItem:true
-		});
+		// $("#owl-demo-1").owlCarousel({
+		// 	  navigation : false, // Show next and prev buttons
+		// 	  slideSpeed : 300,
+		// 	  paginationSpeed : 400,
+		// 	  singleItem:true
+		// });
 
 		//SmothScroll
 		$('a[href*=#]').click(function() {
